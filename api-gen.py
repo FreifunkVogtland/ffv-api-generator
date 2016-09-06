@@ -12,7 +12,7 @@ generic_api = {
 	'name': 'Freifunk Vogtland',
 
 	'contact': {
-		'email': 'info@freifunk-vogtland.net',
+		'email': 'kontakt@freifunk-vogtland.net',
 		'facebook': 'https://www.facebook.com/vogtland.freifunk.net',
 		'ml': 'info@freifunk-vogtland.net',
 		'twitter': '@FreifunkV',
