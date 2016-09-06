@@ -14,7 +14,7 @@ generic_api = {
 	'contact': {
 		'email': 'info@freifunk-vogtland.net',
 		'facebook': 'https://www.facebook.com/vogtland.freifunk.net',
-		'ml': 'http://mx.hateotu.de:8025/mailman/listinfo/freifunk_info',
+		'ml': 'info@freifunk-vogtland.net',
 		'twitter': '@FreifunkV',
 	},
 	'feeds': [
