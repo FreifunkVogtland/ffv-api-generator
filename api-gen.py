@@ -179,7 +179,7 @@ def dump_json(data, filename):
 
 def filter_nodes_city(nodelist, prefix):
 	nodelist_city = copy.copy(nodelist)
-	nodelist_city['nodes'] = filter(lambda n: n['name'].startswith(prefix + '-'), nodelist['nodes'])
+	nodelist_city['nodes'] = list(filter(lambda n: n['name'].startswith(prefix + '-'), nodelist['nodes']))
 	return nodelist_city
 
 def generate_city_data(nodelist, prefix):
@@ -212,8 +212,14 @@ def main():
 		outfile = os.path.join(outpath, 'ffapi-%s.json' % (prefix))
 		outfiletmp = os.path.join(outpath, 'ffapi-%s.json.tmp' % (prefix))
 
+		outnodelist = os.path.join(outpath, 'nodelist-%s.json' % (prefix))
+		outnodelisttmp = os.path.join(outpath, 'nodelist-%s.json.tmp' % (prefix))
+
 		dump_json(data, outfiletmp)
+		dump_json(nodelist_city, outnodelisttmp)
+
 		os.rename(outfiletmp, outfile)
+		os.rename(outnodelisttmp, outnodelist)
 
 if __name__ == "__main__":
 	main()
