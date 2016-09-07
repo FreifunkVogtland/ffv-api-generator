@@ -28,6 +28,11 @@ generic_api = {
 	'nodeMaps': [
 		{
 			'interval': '1min',
+			'technicalType': 'nodelist',
+			'url': 'https://meshviewer.chemnitz.freifunk.net/ffv/',
+		},
+		{
+			'interval': '1min',
 			'mapType': 'geographical',
 			'technicalType': 'meshviewer',
 			'url': 'http://vogtland.freifunk.net/map/',
@@ -190,6 +195,7 @@ def generate_city_data(nodelist, prefix):
 
 	apidata['state']['lastchange'] = datetime.utcnow().isoformat() + 'Z'
 	apidata['state']['nodes'] = len(nodelist['nodes'])
+	apidata['nodeMaps'][0]['url'] += 'nodelist-%s.json' % (prefix)
 
 	return apidata
 
