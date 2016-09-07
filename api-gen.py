@@ -177,36 +177,37 @@ def dump_json(data, filename):
 		f.flush()
 		os.fsync(f.fileno())
 
-def count_nodes(nodes, prefix):
-	nodes_ffv = filter(lambda n: n['nodeinfo']['hostname'].startswith(prefix + '-'), nodes['nodes'])
+def filter_nodes_city(nodelist, prefix):
+	nodelist_city = copy.copy(nodelist)
+	nodelist_city['nodes'] = filter(lambda n: n['name'].startswith(prefix + '-'), nodelist['nodes'])
+	return nodelist_city
 
-	return len(nodes_ffv)
-
-def generate_city_data(nodes, prefix):
+def generate_city_data(nodelist, prefix):
 	apidata = copy.deepcopy(generic_api)
 
 	for replacekey in cities[prefix]:
 		apidata[replacekey] = cities[prefix][replacekey]
 
 	apidata['state']['lastchange'] = datetime.utcnow().isoformat() + 'Z'
-	apidata['state']['nodes'] = count_nodes(nodes, prefix)
+	apidata['state']['nodes'] = len(nodelist['nodes'])
 
 	return apidata
 
 def main():
 	if len(sys.argv) != 3:
-		print("./api-gen.py NODESJSON OUTPATH")
+		print("./api-gen.py NODELIST OUTPATH")
 		sys.exit(1)
 
-	nodesjson = sys.argv[1]
+	nodelistjson = sys.argv[1]
 	outpath = sys.argv[2]
 
 	# load
-	nodes = json.load(open(nodesjson))
+	nodelist = json.load(open(nodelistjson))
 
 	# store
 	for prefix in cities:
-		data = generate_city_data(nodes, prefix)
+		nodelist_city = filter_nodes_city(nodelist, prefix)
+		data = generate_city_data(nodelist_city, prefix)
 
 		outfile = os.path.join(outpath, 'ffapi-%s.json' % (prefix))
 		outfiletmp = os.path.join(outpath, 'ffapi-%s.json.tmp' % (prefix))
