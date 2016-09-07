@@ -208,8 +208,8 @@ def main():
 	for prefix in cities:
 		data = generate_city_data(nodes, prefix)
 
-		outfile = os.path.join(outpath, prefix +'-api.json')
-		outfiletmp = os.path.join(outpath, prefix +'-api.json.tmp')
+		outfile = os.path.join(outpath, 'ffapi-%s.json' % (prefix))
+		outfiletmp = os.path.join(outpath, 'ffapi-%s.json.tmp' % (prefix))
 
 		dump_json(data, outfiletmp)
 		os.rename(outfiletmp, outfile)
