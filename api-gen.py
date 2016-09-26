@@ -29,7 +29,7 @@ generic_api = {
 		{
 			'interval': '1min',
 			'technicalType': 'nodelist',
-			'url': 'https://meshviewer.chemnitz.freifunk.net/ffv/',
+			'url': 'https://vpn01.freifunk-vogtland.net/ffv/',
 		},
 		{
 			'interval': '1min',
