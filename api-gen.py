@@ -166,6 +166,14 @@ cities = {
 			'lon': 12.116667,
 		},
 	},
+	"RC" : {
+		'location': {
+			'city': 'Reichenbach',
+			'country': 'DE',
+			'lat': 50.620802,
+			'lon': 12.303262,
+		},
+	},
 	"RDW" : {
 		'location': {
 			'city': 'Rodewisch',
