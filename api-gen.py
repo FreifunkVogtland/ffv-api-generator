@@ -134,6 +134,14 @@ cities = {
 			'lon': 12.366667,
 		},
 	},
+	"LEN" : {
+		'location': {
+			'city': 'Lengenfeld',
+			'country': 'DE',
+			'lat': 50.569454,
+			'lon': 12.364973,
+		},
+	},
 	"MKN" : {
 		'location': {
 			'city': 'Markneukirchen',
