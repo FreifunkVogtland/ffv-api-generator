@@ -134,6 +134,14 @@ cities = {
 			'lon': 12.366667,
 		},
 	},
+	"K" : {
+		'location': {
+			'city': 'Klingenthal',
+			'country': 'DE',
+			'lat': 50.357126,
+			'lon': 12.468452,
+		},
+	},
 	"LEN" : {
 		'location': {
 			'city': 'Lengenfeld',
