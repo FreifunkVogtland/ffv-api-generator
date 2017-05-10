@@ -31,12 +31,6 @@ generic_api = {
 			'technicalType': 'nodelist',
 			'url': 'https://vpn01.freifunk-vogtland.net/ffv/',
 		},
-		{
-			'interval': '1min',
-			'mapType': 'geographical',
-			'technicalType': 'meshviewer',
-			'url': 'http://vogtland.freifunk.net/map/',
-		},
 	],
 	'state': {
 		'focus': [
