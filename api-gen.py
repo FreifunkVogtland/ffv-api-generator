@@ -165,6 +165,14 @@ cities = {
 			'lon': 12.481389,
 		},
 	},
+	"NMK" : {
+		'location': {
+			'city': 'Neumark',
+			'country': 'DE',
+			'lat': 50.666667,
+			'lon': 12.35,
+		},
+	},
 	"OEL" : {
 		'location': {
 			'city': 'Oelsnitz',
