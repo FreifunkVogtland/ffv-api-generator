@@ -133,6 +133,14 @@ cities = {
 			'lon': 12.1,
 		},
 	},
+	"EI" : {
+		'location': {
+			'city': 'Eichigt',
+			'country': 'DE',
+			'lat': 50.35,
+			'lon': 12.166667,
+		},
+	},
 	"ELL" : {
 		'location': {
 			'city': 'Ellefeld',
