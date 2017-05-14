@@ -221,6 +221,14 @@ cities = {
 			'lon': 12.416667,
 		},
 	},
+	"S" : {
+		'location': {
+			'city': 'Schöneck',
+			'country': 'DE',
+			'lat': 50.366667,
+			'lon': 12.316667,
+		},
+	},
 	"TR" : {
 		'location': {
 			'city': 'Treuen',
