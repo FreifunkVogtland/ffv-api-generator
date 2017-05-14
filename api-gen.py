@@ -229,6 +229,14 @@ cities = {
 			'lon': 12.316667,
 		},
 	},
+	"SBG" : {
+		'location': {
+			'city': 'Steinberg',
+			'country': 'DE',
+			'lat': 50.538889,
+			'lon': 12.477778,
+		},
+	},
 	"TR" : {
 		'location': {
 			'city': 'Treuen',
