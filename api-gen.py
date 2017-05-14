@@ -165,6 +165,7 @@ cities = {
 			'lon': 12.366667,
 		},
 	},
+	# TODO Grünbach
 	"HDG" : {
 		'location': {
 			'city': 'Heinsdorfergrund',
@@ -189,6 +190,7 @@ cities = {
 			'lon': 12.364973,
 		},
 	},
+	# TODO Limbach
 	"MKN" : {
 		'location': {
 			'city': 'Markneukirchen',
@@ -205,6 +207,8 @@ cities = {
 			'lon': 12.481389,
 		},
 	},
+	# TODO Muldenhammer
+	# TODO Netzschkau
 	"NSZ" : {
 		'location': {
 			'city': 'Neuensalz',
@@ -221,6 +225,7 @@ cities = {
 			'lon': 12.35,
 		},
 	},
+	# TODO Neustadt
 	"OEL" : {
 		'location': {
 			'city': 'Oelsnitz',
@@ -229,6 +234,7 @@ cities = {
 			'lon': 12.166667,
 		},
 	},
+	# TODO Pausa-Mühltroff
 	"PL" : {
 		'location': {
 			'city': 'Plauen',
@@ -261,6 +267,7 @@ cities = {
 			'lon': 12.416667,
 		},
 	},
+	# TODO Rosenbach
 	"S" : {
 		'location': {
 			'city': 'Schöneck',
@@ -277,6 +284,8 @@ cities = {
 			'lon': 12.477778,
 		},
 	},
+	# TODO Theuma
+	# TODO Tirpersdorf
 	"TR" : {
 		'location': {
 			'city': 'Treuen',
@@ -285,6 +294,9 @@ cities = {
 			'lon': 12.302222,
 		},
 	},
+	# TODO Triebel
+	# TODO Weischlitz
+	# TODO Werda
 }
 
 def dump_json(data, filename):
