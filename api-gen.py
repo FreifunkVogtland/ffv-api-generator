@@ -101,6 +101,14 @@ cities = {
 			'lon': 12.4,
 		},
 	},
+	"BB" : {
+		'location': {
+			'city': 'Bad Brambach',
+			'country': 'DE',
+			'lat': 50.216667,
+			'lon': 12.316667,
+		},
+	},
 	"BE" : {
 		'location': {
 			'city': 'Bad Elster',
