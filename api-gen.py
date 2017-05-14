@@ -125,6 +125,14 @@ cities = {
 			'lon': 12.279167,
 		},
 	},
+	"BBN" : {
+		'location': {
+			'city': 'Bösenbrunn',
+			'country': 'DE',
+			'lat': 50.397222,
+			'lon': 12.1,
+		},
+	},
 	"ELL" : {
 		'location': {
 			'city': 'Ellefeld',
