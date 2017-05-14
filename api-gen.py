@@ -117,6 +117,14 @@ cities = {
 			'lon': 12.234722,
 		},
 	},
+	"B" : {
+		'location': {
+			'city': 'Bergen',
+			'country': 'DE',
+			'lat': 50.476389,
+			'lon': 12.279167,
+		},
+	},
 	"ELL" : {
 		'location': {
 			'city': 'Ellefeld',
