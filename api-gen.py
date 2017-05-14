@@ -22,7 +22,7 @@ generic_api = {
 			'category': 'blog',
 			'name': 'Freifunk Vogtland Blog',
 			'type': 'rss',
-			'url': 'http://vogtland.freifunk.net/?feed=rss2',
+			'url': 'https://vogtland.freifunk.net/feed/',
 		},
 	],
 	'nodeMaps': [
@@ -72,7 +72,7 @@ generic_api = {
 			'autoupdate',
 		],
 	},
-	'url': 'http://freifunk-vogtland.net/',
+	'url': 'https://vogtland.freifunk.net/',
 
 	# TODO
 	# "support":{  
