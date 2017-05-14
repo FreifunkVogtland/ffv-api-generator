@@ -149,6 +149,14 @@ cities = {
 			'lon': 12.4,
 		},
 	},
+	"ELS" : {
+		'location': {
+			'city': 'Elsterberg',
+			'country': 'DE',
+			'lat': 50.6,
+			'lon': 12.166667,
+		},
+	},
 	"FST" : {
 		'location': {
 			'city': 'Falkenstein',
