@@ -109,6 +109,14 @@ cities = {
 			'lon': 12.234722,
 		},
 	},
+	"ELL" : {
+		'location': {
+			'city': 'Ellefeld',
+			'country': 'DE',
+			'lat': 50.483333,
+			'lon': 12.4,
+		},
+	},
 	"FST" : {
 		'location': {
 			'city': 'Falkenstein',
