@@ -16,6 +16,7 @@ generic_api = {
 		'facebook': 'https://www.facebook.com/vogtland.freifunk.net',
 		'ml': 'info@freifunk-vogtland.net',
 		'twitter': '@FreifunkV',
+		'irc': 'irc://chat.freenode.net/ffv',
 	},
 	'feeds': [
 		{
