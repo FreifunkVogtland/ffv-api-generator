@@ -157,6 +157,14 @@ cities = {
 			'lon': 12.316667,
 		},
 	},
+	"MTL" : {
+		'location': {
+			'city': 'Mühlental',
+			'country': 'DE',
+			'lat': 50.451944,
+			'lon': 12.481389,
+		},
+	},
 	"OEL" : {
 		'location': {
 			'city': 'Oelsnitz',
