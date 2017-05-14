@@ -173,6 +173,14 @@ cities = {
 			'lon': 12.35,
 		},
 	},
+	"NSZ" : {
+		'location': {
+			'city': 'Neuensalz',
+			'country': 'DE',
+			'lat': 50.518056,
+			'lon': 12.220556,
+		},
+	},
 	"OEL" : {
 		'location': {
 			'city': 'Oelsnitz',
