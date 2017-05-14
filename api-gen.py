@@ -197,6 +197,14 @@ cities = {
 			'lon': 12.116667,
 		},
 	},
+	"POE" : {
+		'location': {
+			'city': 'Pöhl',
+			'country': 'DE',
+			'lat': 50.566667,
+			'lon': 12.15,
+		},
+	},
 	"RC" : {
 		'location': {
 			'city': 'Reichenbach',
