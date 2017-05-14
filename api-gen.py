@@ -125,6 +125,14 @@ cities = {
 			'lon': 12.366667,
 		},
 	},
+	"HDG" : {
+		'location': {
+			'city': 'Heinsdorfergrund',
+			'country': 'DE',
+			'lat': 50.622222,
+			'lon': 12.372222,
+		},
+	},
 	"K" : {
 		'location': {
 			'city': 'Klingenthal',
