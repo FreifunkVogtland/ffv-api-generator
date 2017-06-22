@@ -373,6 +373,14 @@ cities = {
 			'lon': 12.059722,
 		},
 	},
+	"W" : {
+		'location': {
+			'city': 'Werda',
+			'country': 'DE',
+			'lat': 50.4375,
+			'lon': 12.305556,
+		},
+	},
 }
 
 def dump_json(data, filename):
