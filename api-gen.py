@@ -269,6 +269,14 @@ cities = {
 			'lon': 12.166667,
 		},
 	},
+	"PM" : {
+		'location': {
+			'city': 'Pausa-Mühltroff',
+			'country': 'DE',
+			'lat': 50.58225,
+			'lon': 11.992194,
+		},
+	},
 	"PL" : {
 		'location': {
 			'city': 'Plauen',
