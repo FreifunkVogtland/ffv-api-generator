@@ -309,6 +309,14 @@ cities = {
 			'lon': 12.416667,
 		},
 	},
+	"RB" : {
+		'location': {
+			'city': 'Rosenbach',
+			'country': 'DE',
+			'lat': 50.54,
+			'lon': 12.040556,
+		},
+	},
 	"S" : {
 		'location': {
 			'city': 'Schöneck',
