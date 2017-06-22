@@ -197,6 +197,14 @@ cities = {
 			'lon': 12.364973,
 		},
 	},
+	"L" : {
+		'location': {
+			'city': 'Limbach',
+			'country': 'DE',
+			'lat': 50.583889,
+			'lon': 12.252778,
+		},
+	},
 	"MKN" : {
 		'location': {
 			'city': 'Markneukirchen',
