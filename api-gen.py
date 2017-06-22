@@ -165,6 +165,14 @@ cities = {
 			'lon': 12.366667,
 		},
 	},
+	"GB" : {
+		'location': {
+			'city': 'Grünbach',
+			'country': 'DE',
+			'lat': 50.452778,
+			'lon': 12.362778,
+		},
+	},
 	"HDG" : {
 		'location': {
 			'city': 'Heinsdorfergrund',
