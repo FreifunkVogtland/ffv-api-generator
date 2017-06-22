@@ -357,6 +357,14 @@ cities = {
 			'lon': 12.302222,
 		},
 	},
+	"T" : {
+		'location': {
+			'city': 'Triebel',
+			'country': 'DE',
+			'lat': 50.35,
+			'lon': 12.133333,
+		},
+	},
 }
 
 def dump_json(data, filename):
