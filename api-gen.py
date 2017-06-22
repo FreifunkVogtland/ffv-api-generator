@@ -365,6 +365,14 @@ cities = {
 			'lon': 12.133333,
 		},
 	},
+	"WEI" : {
+		'location': {
+			'city': 'Weischlitz',
+			'country': 'DE',
+			'lat': 50.447222,
+			'lon': 12.059722,
+		},
+	},
 }
 
 def dump_json(data, filename):
