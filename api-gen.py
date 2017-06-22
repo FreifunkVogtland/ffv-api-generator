@@ -229,6 +229,14 @@ cities = {
 			'lon': 12.462778,
 		},
 	},
+	"NK" : {
+		'location': {
+			'city': 'Netzschkau',
+			'country': 'DE',
+			'lat': 50.616667,
+			'lon': 12.25,
+		},
+	},
 	"NSZ" : {
 		'location': {
 			'city': 'Neuensalz',
