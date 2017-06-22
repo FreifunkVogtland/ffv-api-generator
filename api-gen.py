@@ -221,6 +221,14 @@ cities = {
 			'lon': 12.481389,
 		},
 	},
+	"MH" : {
+		'location': {
+			'city': 'Muldenhammer',
+			'country': 'DE',
+			'lat': 50.435556,
+			'lon': 12.462778,
+		},
+	},
 	"NSZ" : {
 		'location': {
 			'city': 'Neuensalz',
