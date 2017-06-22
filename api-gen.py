@@ -253,6 +253,14 @@ cities = {
 			'lon': 12.35,
 		},
 	},
+	"N" : {
+		'location': {
+			'city': 'Neustadt',
+			'country': 'DE',
+			'lat': 50.466667,
+			'lon': 12.333333,
+		},
+	},
 	"OEL" : {
 		'location': {
 			'city': 'Oelsnitz',
