@@ -333,6 +333,14 @@ cities = {
 			'lon': 12.477778,
 		},
 	},
+	"TH" : {
+		'location': {
+			'city': 'Theuma',
+			'country': 'DE',
+			'lat': 50.47,
+			'lon': 12.2225,
+		},
+	},
 	"TR" : {
 		'location': {
 			'city': 'Treuen',
