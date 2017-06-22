@@ -341,6 +341,14 @@ cities = {
 			'lon': 12.2225,
 		},
 	},
+	"TD" : {
+		'location': {
+			'city': 'Tirpersdorf',
+			'country': 'DE',
+			'lat': 50.434722,
+			'lon': 12.254167,
+		},
+	},
 	"TR" : {
 		'location': {
 			'city': 'Treuen',
