@@ -324,6 +324,11 @@ cities = {
 			'lat': 50.366667,
 			'lon': 12.316667,
 		},
+		"address": {
+			"Name": "hateotu.de (bei GK)",
+			"Street": "Waldstraße 7",
+			"Zipcode": "08261"
+		}
 	},
 	"SBG" : {
 		'location': {
