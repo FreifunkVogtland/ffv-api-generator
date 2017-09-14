@@ -125,7 +125,7 @@ cities = {
 			'lon': 12.279167,
 		},
 	},
-	"BBN" : {
+	"BOE" : {
 		'location': {
 			'city': 'Bösenbrunn',
 			'country': 'DE',
@@ -133,7 +133,7 @@ cities = {
 			'lon': 12.1,
 		},
 	},
-	"EI" : {
+	"EIC" : {
 		'location': {
 			'city': 'Eichigt',
 			'country': 'DE',
@@ -189,7 +189,7 @@ cities = {
 			'lon': 12.468452,
 		},
 	},
-	"LEN" : {
+	"LE" : {
 		'location': {
 			'city': 'Lengenfeld',
 			'country': 'DE',
@@ -197,7 +197,7 @@ cities = {
 			'lon': 12.364973,
 		},
 	},
-	"L" : {
+	"LIM" : {
 		'location': {
 			'city': 'Limbach',
 			'country': 'DE',
@@ -229,7 +229,7 @@ cities = {
 			'lon': 12.462778,
 		},
 	},
-	"NK" : {
+	"N" : {
 		'location': {
 			'city': 'Netzschkau',
 			'country': 'DE',
@@ -253,7 +253,7 @@ cities = {
 			'lon': 12.35,
 		},
 	},
-	"N" : {
+	"NST" : {
 		'location': {
 			'city': 'Neustadt',
 			'country': 'DE',
@@ -269,7 +269,7 @@ cities = {
 			'lon': 12.166667,
 		},
 	},
-	"PM" : {
+	"PMF" : {
 		'location': {
 			'city': 'Pausa-Mühltroff',
 			'country': 'DE',
@@ -309,7 +309,7 @@ cities = {
 			'lon': 12.416667,
 		},
 	},
-	"RB" : {
+	"RBH" : {
 		'location': {
 			'city': 'Rosenbach',
 			'country': 'DE',
@@ -338,7 +338,7 @@ cities = {
 			'lon': 12.477778,
 		},
 	},
-	"TH" : {
+	"T" : {
 		'location': {
 			'city': 'Theuma',
 			'country': 'DE',
@@ -346,7 +346,7 @@ cities = {
 			'lon': 12.2225,
 		},
 	},
-	"TD" : {
+	"TDF" : {
 		'location': {
 			'city': 'Tirpersdorf',
 			'country': 'DE',
@@ -362,7 +362,7 @@ cities = {
 			'lon': 12.302222,
 		},
 	},
-	"T" : {
+	"TRI" : {
 		'location': {
 			'city': 'Triebel',
 			'country': 'DE',
@@ -378,7 +378,7 @@ cities = {
 			'lon': 12.059722,
 		},
 	},
-	"W" : {
+	"WER" : {
 		'location': {
 			'city': 'Werda',
 			'country': 'DE',
