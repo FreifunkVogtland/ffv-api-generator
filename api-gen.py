@@ -198,7 +198,7 @@ cities = {
             'lon': 12.364973,
         },
     },
-    "LIM": {
+    "L": {
         'location': {
             'city': 'Limbach',
             'country': 'DE',
