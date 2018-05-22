@@ -31,7 +31,7 @@ generic_api = {
         {
             'interval': '1min',
             'technicalType': 'nodelist',
-            'url': 'https://vpn01.freifunk-vogtland.net/ffv/',
+            'url': 'https://mapdata.freifunk-vogtland.net/',
         },
     ],
     'state': {
