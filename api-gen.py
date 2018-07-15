@@ -2,7 +2,6 @@
 # -*- coding: utf-8; -*-
 
 import copy
-from datetime import datetime
 import json
 import os
 import os.path
@@ -397,11 +396,54 @@ def dump_json(data, filename):
         os.fsync(f.fileno())
 
 
-def filter_nodes_city(nodelist, prefix):
-    nodelist_city = copy.copy(nodelist)
-    nodelist_city['nodes'] = list(filter(lambda n:
-                                         n['name'].startswith(prefix + '-'),
-                                         nodelist['nodes']))
+def filter_nodes_city(meshviewer, prefix):
+    domain_code = 'ffv_' + prefix.lower()
+    nodelist_city = {
+        'nodes': [],
+        'updated_at': meshviewer['timestamp'],
+        'version': '1.0.1',
+    }
+
+    for node in meshviewer['nodes']:
+        if 'site_code' not in node:
+            continue
+
+        if node['site_code'] != domain_code:
+            continue
+
+        if 'node_id' not in node:
+            continue
+
+        if 'hostname' not in node:
+            continue
+
+        if 'lastseen' not in node:
+            continue
+
+        if 'is_online' not in node:
+            continue
+
+        if 'clients' not in node:
+            continue
+
+        entry = {
+            'name': node['hostname'],
+            'id': node['node_id'],
+            'status': {
+                'lastcontact': node['lastseen'],
+                'clients': node['clients'],
+                'online': node['is_online'],
+            },
+        }
+
+        if 'location' in node and 'latitude' in node['location'] and 'longitude' in node['location']:
+            entry['position'] = {
+                'lat': node['location']['latitude'],
+                'long': node['location']['longitude'],
+            }
+
+        nodelist_city['nodes'].append(entry)
+
     return nodelist_city
 
 
@@ -411,7 +453,7 @@ def generate_city_data(nodelist, prefix):
     for replacekey in cities[prefix]:
         apidata[replacekey] = cities[prefix][replacekey]
 
-    apidata['state']['lastchange'] = datetime.utcnow().isoformat() + 'Z'
+    apidata['state']['lastchange'] = nodelist['updated_at']
     apidata['state']['nodes'] = len(nodelist['nodes'])
     apidata['nodeMaps'][0]['url'] += 'nodelist-%s.json' % (prefix)
 
@@ -420,18 +462,18 @@ def generate_city_data(nodelist, prefix):
 
 def main():
     if len(sys.argv) != 3:
-        print("./api-gen.py NODELIST OUTPATH")
+        print("./api-gen.py MESHVIEWERJSON OUTPATH")
         sys.exit(1)
 
-    nodelistjson = sys.argv[1]
+    meshviewerjson = sys.argv[1]
     outpath = sys.argv[2]
 
     # load
-    nodelist = json.load(open(nodelistjson))
+    meshviewer = json.load(open(meshviewerjson))
 
     # store
     for prefix in cities:
-        nodelist_city = filter_nodes_city(nodelist, prefix)
+        nodelist_city = filter_nodes_city(meshviewer, prefix)
         data = generate_city_data(nodelist_city, prefix)
 
         outfile = os.path.join(outpath, 'ffapi-%s.json' % (prefix))
