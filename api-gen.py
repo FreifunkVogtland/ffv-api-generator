@@ -58,12 +58,12 @@ generic_api = {
         'networks': {
             'ipv4': [
                 {
-                    'network': '10.149.0.0/16',
+                    'network': '10.204.0.0/16',
                 },
             ],
             'ipv6': [
                 {
-                    'network': '2001:bc8:3f13:ffc2::/64',
+                    'network': '2a03:2260:200f::/48',
                 },
             ],
         },
