@@ -25,6 +25,12 @@ generic_api = {
             'type': 'rss',
             'url': 'https://vogtland.freifunk.net/feed/',
         },
+        {
+            "name": "Freifunk Vogtland Events",
+            "category": "ics",
+            "type": "ics",
+            "url": "https://www.vereinonline.org/freifunk.vogtland/?action=events_exportoutlook&id=24200",
+        },
     ],
     'nodeMaps': [
         {
