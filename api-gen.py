@@ -411,10 +411,10 @@ def filter_nodes_city(meshviewer, prefix):
     }
 
     for node in meshviewer['nodes']:
-        if 'site_code' not in node:
+        if 'domain' not in node:
             continue
 
-        if node['site_code'] != domain_code:
+        if node['domain'] != domain_code:
             continue
 
         if 'node_id' not in node:
