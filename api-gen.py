@@ -10,7 +10,7 @@ import os.path
 import sys
 
 generic_api = {
-    'api': '0.4.14',
+    'api': '0.5.1',
     'name': 'Freifunk Vogtland',
 
     'contact': {
@@ -19,6 +19,7 @@ generic_api = {
         'ml': 'info@freifunk-vogtland.net',
         'twitter': '@FreifunkV',
         'irc': 'ircs://irc.hackint.org:6697/ffv',
+        'webform': 'https://vogtland.freifunk.net/kontakt/',
     },
     'feeds': [
         {
@@ -55,7 +56,7 @@ generic_api = {
         'firmware': {
                 'docs': 'https://github.com/FreifunkVogtland/site-ffv',
                 'name': 'Gluon',
-                'url': 'http://firmware.freifunk-vogtland.net/',
+                'url': 'https://firmware.freifunk-vogtland.net/',
                 'vpnaccess': 'automatic',
         },
         'legals': [
@@ -97,301 +98,375 @@ cities = {
         'location': {
             'city': 'Adorf',
             'country': 'DE',
-            'lat': 50.316667,
-            'lon': 12.266667,
+            'geoCode': {
+                'lat': 50.316667,
+                'lon': 12.266667,
+            },
         },
     },
     "AE": {
         'location': {
             'city': 'Auerbach',
             'country': 'DE',
-            'lat': 50.509444,
-            'lon': 12.4,
+            'geoCode': {
+                'lat': 50.509444,
+                'lon': 12.4,
+            },
         },
     },
     "BB": {
         'location': {
             'city': 'Bad Brambach',
             'country': 'DE',
-            'lat': 50.216667,
-            'lon': 12.316667,
+            'geoCode': {
+                'lat': 50.216667,
+                'lon': 12.316667,
+            },
         },
     },
     "BE": {
         'location': {
             'city': 'Bad Elster',
             'country': 'DE',
-            'lat': 50.281944,
-            'lon': 12.234722,
+            'geoCode': {
+                'lat': 50.281944,
+                'lon': 12.234722,
+            },
         },
     },
     "B": {
         'location': {
             'city': 'Bergen',
             'country': 'DE',
-            'lat': 50.476389,
-            'lon': 12.279167,
+            'geoCode': {
+                'lat': 50.476389,
+                'lon': 12.279167,
+            },
         },
     },
     "BOE": {
         'location': {
             'city': 'Bösenbrunn',
             'country': 'DE',
-            'lat': 50.397222,
-            'lon': 12.1,
+            'geoCode': {
+                'lat': 50.397222,
+                'lon': 12.1,
+            },
         },
     },
     "EIC": {
         'location': {
             'city': 'Eichigt',
             'country': 'DE',
-            'lat': 50.35,
-            'lon': 12.166667,
+            'geoCode': {
+                'lat': 50.35,
+                'lon': 12.166667,
+            },
         },
     },
     "ELL": {
         'location': {
             'city': 'Ellefeld',
             'country': 'DE',
-            'lat': 50.483333,
-            'lon': 12.4,
+            'geoCode': {
+                'lat': 50.483333,
+                'lon': 12.4,
+            },
         },
     },
     "ELS": {
         'location': {
             'city': 'Elsterberg',
             'country': 'DE',
-            'lat': 50.6,
-            'lon': 12.166667,
+            'geoCode': {
+                'lat': 50.6,
+                'lon': 12.166667,
+            },
         },
     },
     "FST": {
         'location': {
             'city': 'Falkenstein',
             'country': 'DE',
-            'lat': 50.466667,
-            'lon': 12.366667,
+            'geoCode': {
+                'lat': 50.466667,
+                'lon': 12.366667,
+            },
         },
     },
     "GB": {
         'location': {
             'city': 'Grünbach',
             'country': 'DE',
-            'lat': 50.452778,
-            'lon': 12.362778,
+            'geoCode': {
+                'lat': 50.452778,
+                'lon': 12.362778,
+            },
         },
     },
     "HDG": {
         'location': {
             'city': 'Heinsdorfergrund',
             'country': 'DE',
-            'lat': 50.622222,
-            'lon': 12.372222,
+            'geoCode': {
+                'lat': 50.622222,
+                'lon': 12.372222,
+            },
         },
     },
     "K": {
         'location': {
             'city': 'Klingenthal',
             'country': 'DE',
-            'lat': 50.357126,
-            'lon': 12.468452,
+            'geoCode': {
+                'lat': 50.357126,
+                'lon': 12.468452,
+            },
         },
     },
     "LE": {
         'location': {
             'city': 'Lengenfeld',
             'country': 'DE',
-            'lat': 50.569454,
-            'lon': 12.364973,
+            'geoCode': {
+                'lat': 50.569454,
+                'lon': 12.364973,
+            },
         },
     },
     "L": {
         'location': {
             'city': 'Limbach',
             'country': 'DE',
-            'lat': 50.583889,
-            'lon': 12.252778,
+            'geoCode': {
+                'lat': 50.583889,
+                'lon': 12.252778,
+            },
         },
     },
     "MKN": {
         'location': {
             'city': 'Markneukirchen',
             'country': 'DE',
-            'lat': 50.316667,
-            'lon': 12.316667,
+            'geoCode': {
+                'lat': 50.316667,
+                'lon': 12.316667,
+            },
         },
     },
     "MTL": {
         'location': {
             'city': 'Mühlental',
             'country': 'DE',
-            'lat': 50.451944,
-            'lon': 12.481389,
+            'geoCode': {
+                'lat': 50.451944,
+                'lon': 12.481389,
+            },
         },
     },
     "MH": {
         'location': {
             'city': 'Muldenhammer',
             'country': 'DE',
-            'lat': 50.435556,
-            'lon': 12.462778,
+            'geoCode': {
+                'lat': 50.435556,
+                'lon': 12.462778,
+            },
         },
     },
     "N": {
         'location': {
             'city': 'Netzschkau',
             'country': 'DE',
-            'lat': 50.616667,
-            'lon': 12.25,
+            'geoCode': {
+                'lat': 50.616667,
+                'lon': 12.25,
+            },
         },
     },
     "NSZ": {
         'location': {
             'city': 'Neuensalz',
             'country': 'DE',
-            'lat': 50.518056,
-            'lon': 12.220556,
+            'geoCode': {
+                'lat': 50.518056,
+                'lon': 12.220556,
+            },
         },
     },
     "NMK": {
         'location': {
             'city': 'Neumark',
             'country': 'DE',
-            'lat': 50.666667,
-            'lon': 12.35,
+            'geoCode': {
+                'lat': 50.666667,
+                'lon': 12.35,
+            },
         },
     },
     "NST": {
         'location': {
             'city': 'Neustadt',
             'country': 'DE',
-            'lat': 50.466667,
-            'lon': 12.333333,
+            'geoCode': {
+                'lat': 50.466667,
+                'lon': 12.333333,
+            },
         },
     },
     "OEL": {
         'location': {
             'city': 'Oelsnitz',
             'country': 'DE',
-            'lat': 50.416667,
-            'lon': 12.166667,
+            'geoCode': {
+                'lat': 50.416667,
+                'lon': 12.166667,
+            },
         },
     },
     "PMF": {
         'location': {
             'city': 'Pausa-Mühltroff',
             'country': 'DE',
-            'lat': 50.58225,
-            'lon': 11.992194,
+            'geoCode': {
+                'lat': 50.58225,
+                'lon': 11.992194,
+            },
         },
     },
     "PL": {
         'location': {
             'city': 'Plauen',
             'country': 'DE',
-            'lat': 50.483333,
-            'lon': 12.116667,
+            'geoCode': {
+                'lat': 50.483333,
+                'lon': 12.116667,
+            },
         },
     },
     "POE": {
         'location': {
             'city': 'Pöhl',
             'country': 'DE',
-            'lat': 50.566667,
-            'lon': 12.15,
+            'geoCode': {
+                'lat': 50.566667,
+                'lon': 12.15,
+            },
         },
     },
     "RC": {
         'location': {
             'city': 'Reichenbach',
             'country': 'DE',
-            'lat': 50.620802,
-            'lon': 12.303262,
+            'geoCode': {
+                'lat': 50.620802,
+                'lon': 12.303262,
+            },
         },
     },
     "RDW": {
         'location': {
             'city': 'Rodewisch',
             'country': 'DE',
-            'lat': 50.516667,
-            'lon': 12.416667,
+            'geoCode': {
+                'lat': 50.516667,
+                'lon': 12.416667,
+            },
         },
     },
     "RBH": {
         'location': {
             'city': 'Rosenbach',
             'country': 'DE',
-            'lat': 50.54,
-            'lon': 12.040556,
+            'geoCode': {
+                'lat': 50.54,
+                'lon': 12.040556,
+            },
         },
     },
     "S": {
         'location': {
             'city': 'Schöneck',
             'country': 'DE',
-            'lat': 50.366667,
-            'lon': 12.316667,
+            'geoCode': {
+                'lat': 50.366667,
+                'lon': 12.316667,
+            },
+            'address': {
+               'name': 'hateotu.de (bei GK)',
+               'street': 'Waldstraße 7',
+               'zipcode': '08261'
+           },
         },
-        "address": {
-            "Name": "hateotu.de (bei GK)",
-            "Street": "Waldstraße 7",
-            "Zipcode": "08261"
-        }
     },
     "SBG": {
         'location': {
             'city': 'Steinberg',
             'country': 'DE',
-            'lat': 50.538889,
-            'lon': 12.477778,
+            'geoCode': {
+                'lat': 50.538889,
+                'lon': 12.477778,
+            },
         },
     },
     "T": {
         'location': {
             'city': 'Theuma',
             'country': 'DE',
-            'lat': 50.47,
-            'lon': 12.2225,
+            'geoCode': {
+                'lat': 50.47,
+                'lon': 12.2225,
+            },
         },
     },
     "TDF": {
         'location': {
             'city': 'Tirpersdorf',
             'country': 'DE',
-            'lat': 50.434722,
-            'lon': 12.254167,
+            'geoCode': {
+                'lat': 50.434722,
+                'lon': 12.254167,
+            },
         },
     },
     "TR": {
         'location': {
             'city': 'Treuen',
             'country': 'DE',
-            'lat': 50.5425,
-            'lon': 12.302222,
+            'geoCode': {
+                'lat': 50.5425,
+                'lon': 12.302222,
+            },
         },
     },
     "TRI": {
         'location': {
             'city': 'Triebel',
             'country': 'DE',
-            'lat': 50.35,
-            'lon': 12.133333,
+            'geoCode': {
+                'lat': 50.35,
+                'lon': 12.133333,
+            },
         },
     },
     "WEI": {
         'location': {
             'city': 'Weischlitz',
             'country': 'DE',
-            'lat': 50.447222,
-            'lon': 12.059722,
+            'geoCode': {
+                'lat': 50.447222,
+                'lon': 12.059722,
+            },
         },
     },
     "WER": {
         'location': {
             'city': 'Werda',
             'country': 'DE',
-            'lat': 50.4375,
-            'lon': 12.305556,
+            'geoCode': {
+                'lat': 50.4375,
+                'lon': 12.305556,
+            },
         },
     },
 }
