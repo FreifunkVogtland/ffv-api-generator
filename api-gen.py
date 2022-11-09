@@ -83,14 +83,6 @@ generic_api = {
         ],
     },
     'url': 'https://vogtland.freifunk.net/',
-    "support": {
-        "donations": {
-            "bankaccount": {
-                "IBAN": "DE30870958245000772005",
-                "BIC": "GENODEF1PL1",
-            },
-        },
-    },
 }
 
 cities = {
