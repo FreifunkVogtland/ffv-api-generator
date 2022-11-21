@@ -20,6 +20,7 @@ generic_api = {
         'twitter': '@FreifunkV',
         'irc': 'ircs://irc.hackint.org:6697/ffv',
         'webform': 'https://vogtland.freifunk.net/kontakt/',
+        'mastodon': 'https://vogtland.social/@Freifunk',
     },
     'feeds': [
         {
